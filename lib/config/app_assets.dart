@@ -1,4 +1,4 @@
-String sound = "assets/sound";
+String sound = "sound";
 String img = "assets/img";
 
 class AppAssets {
