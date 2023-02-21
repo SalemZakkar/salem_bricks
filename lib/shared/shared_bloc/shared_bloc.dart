@@ -6,8 +6,7 @@ part 'shared_state.dart';
 
 class SharedBloc extends Bloc<SharedEvent, SharedState> {
   SharedBloc() : super(SharedInitial()) {
-    on<SharedEvent>((event, emit) {
-    });
+    on<SharedEvent>((event, emit) {});
     on<RefreshThemeEvent>((event, emit) {
       emit(RefreshThemeState());
       emit(SharedInitial());

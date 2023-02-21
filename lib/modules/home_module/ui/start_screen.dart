@@ -1,15 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:salem_brick/modules/game_module/routes.dart';
 import 'package:salem_brick/modules/home_module/bloc/home_bloc.dart';
-import 'package:salem_brick/modules/home_module/routes.dart';
 import 'package:salem_brick/modules/theme_module/routes.dart';
-
 import '../../../shared/widget/button.dart';
 
 class StartPage extends StatefulWidget {
   const StartPage({Key? key}) : super(key: key);
-
   @override
   State<StartPage> createState() => _StartPageState();
 }
@@ -17,7 +15,6 @@ class StartPage extends StatefulWidget {
 class _StartPageState extends State<StartPage> {
   HomeBloc bloc = HomeBloc();
   bool soundMode = true;
-
   @override
   void initState() {
     bloc.add(GetSoundModeEvent());
@@ -85,7 +82,7 @@ class _StartPageState extends State<StartPage> {
                       ],
                     ),
                     onPressed: () {
-                      Navigator.pushNamed(context, HomeRoutes.levelsScreen);
+                      Navigator.pushNamed(context, GameRoutes.levelsScreen);
                     },
                   ),
                   const SizedBox(

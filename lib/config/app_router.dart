@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:salem_brick/modules/game_module/routes.dart';
+import 'package:salem_brick/modules/game_module/ui/game_screen.dart';
 import 'package:salem_brick/modules/home_module/routes.dart';
-import 'package:salem_brick/modules/home_module/ui/levels_screen.dart';
+import 'package:salem_brick/modules/game_module/ui/levels_screen.dart';
 import 'package:salem_brick/modules/home_module/ui/start_screen.dart';
 import 'package:salem_brick/modules/theme_module/routes.dart';
 import 'package:salem_brick/modules/theme_module/ui/themes_page.dart';
@@ -12,8 +14,10 @@ class AppRouter {
         return MaterialPageRoute(builder: (context) => const StartPage());
       case ThemeRoutes.themesPage:
         return MaterialPageRoute(builder: (context) => const ThemesPage());
-      case HomeRoutes.levelsScreen:
+      case GameRoutes.levelsScreen:
         return MaterialPageRoute(builder: (context) => const LevelsScreen());
+      case GameRoutes.gameScreen:
+        return MaterialPageRoute(builder: (context) => const GameScreen());
       default:
         return null;
     }

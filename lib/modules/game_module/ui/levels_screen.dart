@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:salem_brick/modules/game_module/routes.dart';
 
 import '../../../shared/widget/button.dart';
 
@@ -42,7 +43,9 @@ class _LevelsScreenState extends State<LevelsScreen> {
                 width: 250,
                 height: 60,
                 child: const Text("Easy"),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, GameRoutes.gameScreen);
+                },
               ),
               const SizedBox(
                 height: 30,
@@ -51,7 +54,9 @@ class _LevelsScreenState extends State<LevelsScreen> {
                 width: 250,
                 height: 60,
                 child: const Text("Medium"),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, GameRoutes.gameScreen);
+                },
               ),
               const SizedBox(
                 height: 30,
@@ -60,7 +65,9 @@ class _LevelsScreenState extends State<LevelsScreen> {
                 width: 250,
                 height: 60,
                 child: const Text("Hard"),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, GameRoutes.gameScreen);
+                },
               )
             ],
           ),
