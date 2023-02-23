@@ -12,7 +12,7 @@ class _BarState extends State<Bar> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: MediaQuery.of(context).size.width / 4,
+      width: MediaQuery.of(context).size.width / 5,
       height: 10,
       color: Theme.of(context).dividerColor,
     );

@@ -21,7 +21,7 @@ class BallController {
   }
 
   void updateDirection(double x, double y, double playerX, double playerWidth) {
-    if (y >= 0.9 && playerX == x) {
+    if (y >= 0.9 && playerX <= x && playerX + playerWidth >= x) {
       directionY = Direction.up;
     }
     if (y <= -0.9) {

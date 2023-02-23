@@ -10,3 +10,8 @@ class GameModeEvent extends GameEvent {
   @override
   List<Object?> get props => [started];
 }
+
+class GetTimes extends GameEvent {
+  @override
+  List<Object?> get props => [];
+}

@@ -15,11 +15,12 @@ class BrickController {
     // print(touch);
     double shift = (touch - motions[0]).abs();
     double pos = 0;
-    print(shift);
+    // print(shift);
+
     if (left) {
       pos = max(motions[1] - shift - 0.04, -1);
     } else {
-      pos = min(motions[1] + shift + 0.04, 1);
+      pos = min(motions[1] + shift + 0.04, 0.6);
     }
     motions[0] = touch;
     motions[1] = pos;
